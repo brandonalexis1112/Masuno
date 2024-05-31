@@ -1,1 +1,54 @@
-<p>form works!</p>
+<div>
+  <div>
+    <img
+      src="https://s3-alpha-sig.figma.com/img/cbfa/95bb/f5aba79eb7ed4097c1cc1cc66dddeabf?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V4O5QsI1kCbqmjq6kZHhPfcNHxDUHRrG0epNC4R7GIVkJjJtS4Zkqf-LAmi55tdWCJtkBU6bJQssMgdbKAI7ymDg0AJDePzaG2UTvZY-InB--3iDTw6ixPZeGNd0N3T4esRDhWhiAAqkDPDyA-tasbh1KU190a-WV2BHgak5Fpo0T7-EC1H0ZP4p3Bxtf0qg0y07-4xqxxfoqbf4~CJJcQa9qSG7sSPytwTSC~~1vpTVNevqVXzGbo7pPlu8~Hv-3iNbOiz3b7-NOVYZr6bHfITh18ytQiAOhw0VD0aakidoi6lWcRLewikfjNqytuZ5~WTBhK57-vV8WyfNDmZ8SA__"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <h2>Completa tus datos</h2>
+      </div>
+      <div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <app-form-feild
+            label="Nombre"
+            formControlName="nombre"
+            [maxLength]="10"
+            pattern="^[a-zA-Z]*$"
+          ></app-form-feild>
+          <app-form-feild
+            label="Apellidos"
+            formControlName="apellidos"
+            [maxLength]="10"
+            pattern="^[a-zA-Z]*$"
+          ></app-form-feild>
+          <app-form-feild
+            label="Correo"
+            type="email"
+            formControlName="correo"
+            [maxLength]="16"
+            pattern="^.{16}$"
+          ></app-form-feild>
+          <app-form-feild
+            label="Número"
+            type="tel"
+            formControlName="numero"
+            [maxLength]="9"
+            pattern="^[0-9]{9}$"
+          ></app-form-feild>
+          <button type="submit" [disabled]="form.invalid">Enviar</button>
+        </form>
+      </div>
+      <div>
+        <p>
+          Aprovecha las mejores ofertas y descuentos en pollo, pavo, cerdo,
+          congelados, embutidos y mucho más. No te pierdas de nada estos
+          Cyberdays registrándote y obteniendo grandes descuentos exclusivos.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

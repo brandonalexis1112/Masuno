@@ -1,1 +1,20 @@
-<p>form-feild works!</p>
+<div class="form-group">
+  <label>{{ label }}</label>
+  <input
+    [type]="type"
+    [attr.maxLength]="maxLength"
+    [attr.pattern]="pattern"
+    [ngModel]="value"
+    (input)="onInput($any($event.target).value)"
+  />
+  <div *ngIf="type === 'text' && value.length > maxLength" class="error">
+    Máximo de {{ maxLength }} caracteres permitidos.
+  </div>
+  <div *ngIf="type === 'email' && value.length !== 16" class="error">
+    El correo debe tener 16 caracteres.
+  </div>
+  <div *ngIf="type === 'tel' && value.length !== 9" class="error">
+    El número debe tener 9 dígitos.
+  </div>
+</div>
+
