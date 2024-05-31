@@ -1,0 +1,11 @@
+.slide {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  

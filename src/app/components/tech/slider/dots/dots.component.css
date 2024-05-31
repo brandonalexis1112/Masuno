@@ -1,0 +1,19 @@
+.dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dots span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dots span.active {
+    background-color: #717171;
+  }
+  

@@ -1,0 +1,8 @@
+<div class="dots">
+  <span
+    *ngFor="let _ of [].constructor(count); let idx = index"
+    (click)="onDotClick(idx)"
+    [class.active]="idx === currentIndex"
+  >
+  </span>
+</div>
