@@ -1,1 +1,16 @@
-<p>gallery works!</p>
+<div class="gallery">
+    <div class="slides">
+      <img *ngFor="let image of images; let i = index"
+           [src]="image.src"
+           [alt]="image.alt"
+           [class.active]="i === currentIndex">
+    </div>
+    <button (click)="prevSlide()">Previous</button>
+    <button (click)="nextSlide()">Next</button>
+    <div class="dots">
+      <span *ngFor="let image of images; let i = index"
+            (click)="goToSlide(i)"
+            [class.active]="i === currentIndex"></span>
+    </div>
+  </div>
+  
