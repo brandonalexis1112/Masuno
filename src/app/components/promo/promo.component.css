@@ -1,0 +1,31 @@
+.prom {
+  background-color: #ffffff;
+  padding: 15px;
+  &.-container {
+    width: 38vw;
+    height: 360px;
+  }
+  &.-main {
+    background-color: #ffffff;
+    border: 2px dashed #003383;
+    border-radius: 15px;
+    .description{
+        gap: 15px;
+    }
+  }
+  .sub-tittle {
+    .per {
+      font-size: 130px;
+      font-weight: 1000;
+    }
+  }
+}
+.pink {
+  color: #db0fa8;
+}
+p {
+  color: #003383;
+}
+.fz {
+  font-size: 24px;
+}

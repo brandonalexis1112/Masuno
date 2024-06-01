@@ -1,0 +1,24 @@
+.card {
+  &.-container {
+    display: flex;
+    flex-direction: row;
+    background: #1a36a8;
+  }
+  &.-main{
+    padding: 8vh;
+    animation: slideRight 2s ease-out;
+  }
+  &.-tittle {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    max-width: 34vw;
+    .sub-tittle {
+      max-width: 20vw;
+      height: 5vh;
+    }
+    .description {
+      padding: 15px 0px;
+    }
+  }
+}

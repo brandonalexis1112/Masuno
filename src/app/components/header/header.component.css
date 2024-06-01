@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &.-container {
+    background: #1a36a8;
+    flex-direction: column;
+  }
+  &.-main {
+    animation: fadeIn 2s ease-in;
+    p {
+      margin: 5px;
+      color: #ffffff;
+      font-size: 50px;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.discount {
+  &.container {
+    padding: 8vh;
+    .line {
+      width: 100%;
+      height: 2px;
+    }
+  }
+  &.main {
+    .tittle {
+      gap: 25px;
+      padding: 25px;
+    }
+    .step{
+        padding: 25px;
+        gap: 25px;
+    }
+  }
+}

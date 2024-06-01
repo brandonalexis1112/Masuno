@@ -1,0 +1,24 @@
+.form {
+  &.container {
+    padding: 60px;
+    animation: slideIn 2s ease-out;
+  }
+  &.logo {
+    max-width: 115px;
+    position: absolute;
+    right: 58px;
+    top: 65px;
+    animation: slideUp 2s ease-out;
+  }
+  &.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    height: 450px;
+  }
+}
+
+img {
+  width: 120px;
+  height: 120px;
+}

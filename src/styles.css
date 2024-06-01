@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  font-family: Futura Std;
+}
+h1 {
+  font-weight: 600;
+  font-size: 34px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  &.h3-blue {
+    color: #1a36a8;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+.fl {
+  display: flex;
+  &.center {
+    align-items: center;
+  }
+  &.row {
+    flex-direction: row;
+  }
+  &.col {
+    flex-direction: column;
+  }
+}
+.ctr {
+  text-align: center;
+}
+.blue {
+  background-color: #003383;
+  &.circule {
+    border-radius: 100%;
+    width: 230px;
+    height: 230px;
+    align-content: center;
+  }
+}
+.red {
+  background-color: #f2304b;
+  &.-line {
+    width: 30%;
+    height: 2px;
+    align-self: center;
+  }
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideRight {
+    from {
+      transform: translateX(-100%); 
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%); 
+    }
+    to {
+      transform: translateY(0); 
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
