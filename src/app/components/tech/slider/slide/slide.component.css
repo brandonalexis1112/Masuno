@@ -1,11 +1,27 @@
 .slide {
-    display: none;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 20px;
+  display: none;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+  .tittle {
+    gap: 25px;
+    padding: 30px 140px;
+    align-items: flex-start;
   }
-  
-  .slide.active {
-    display: block;
-  }
-  
+}
+
+.slide.active {
+  display: block;
+}
+img {
+  height: 550px;
+  max-width: 640px;
+}
+svg {
+  height: 60px;
+  width: 60px;
+}
+p {
+  text-align: left;
+}
+

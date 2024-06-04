@@ -1,0 +1,31 @@
+.footer {
+  color: hsl(0, 0%, 100%);
+
+  &.main {
+    gap: 14vw;
+  }
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 14px;
+    line-height: 19.2px;
+  }
+  .gap{
+    gap: 3vh;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+  .icons{
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

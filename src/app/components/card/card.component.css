@@ -4,7 +4,7 @@
     flex-direction: row;
     background: #1a36a8;
   }
-  &.-main{
+  &.-main {
     padding: 8vh;
     animation: slideRight 2s ease-out;
   }
