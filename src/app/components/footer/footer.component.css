@@ -12,9 +12,7 @@
     font-size: 14px;
     line-height: 19.2px;
   }
-  .gap{
-    gap: 3vh;
-  }
+  
   .icon{
     width: 20px;
     height: 20px;
@@ -27,5 +25,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .library{
+    justify-content: center;
   }
 }

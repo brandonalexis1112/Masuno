@@ -1,15 +1,16 @@
 <app-header></app-header>
 <div>
-  <div>
+  <div class="ux">
     <img
+      class="image"
       src="https://s3-alpha-sig.figma.com/img/539f/416a/b8b26acbdf85160207943d81bad1e933?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EncTKEogzfzlpWKHvhZowPJGBbogrOIdsniHandXS6doSLL5glfDZ5gQ0cZacq1lheq86P8ljsJ-xQXDAl79fJQemdRn8PKHGQyPSIriDRnKK931MTHkux~uOnQj-ZoHJ6FQQ15QNjUZlDU8a-OF4k7THUT6ei8eVVJnX2qG2DyBT-sFKvzr1LfFpcYn~43KfVYoAyi4tmNfvI8SkTTgraAsAUcpRz1tlUnVsPPbZlglQ3DE8GWSeUsIxCQ4S1HAkLY66mCjAKDgCXS5SQTKpBF6r1oow6quWMUT7r3U4pcfx3uRW3v9F4H5TKsolLGC4JEWb1x2UB1w0greOLD7yw__"
       alt=""
       srcset=""
     />
   </div>
-  <div>
-    <div>
-      <h3>¿Qué es el diseño UX/UI?</h3>
+  <div class="ux container">
+    <div class="ux main fl col gap">
+      <h3 class="h3-blue">¿Qué es el diseño UX/UI?</h3>
       <p>
         Cuando creamos la web de una marca se nos pasan muchas cosas por la
         cabeza: ¿Las categorías están en el lugar adecuado?, ¿Hacen bien su
@@ -23,34 +24,49 @@
         visitar la web. En este artículo definiremos qué es la UX y la UI y qué
         relación existe entre ambas.
       </p>
-    </div>
-    <div>
-      <h3>¿Factores que influyen</h3>
+      <h3 class="h3-blue">¿Factores que influyen</h3>
       <p>
         La percepción: Tenemos que saber qué nos llama la atención, cómo nos
-        afectan los colores y cómo desplazamos la mirada por la pantalla. Las
-        emociones: Las emociones no son reacciones automáticas, y por lo tanto
-        hay que entender cómo se generan y qué implicaciones tienen. Las
+        afectan los colores y cómo desplazamos la mirada por la pantalla.
+      </p>
+      <p>
+        Las emociones: Las emociones no son reacciones automáticas, y por lo
+        tanto hay que entender cómo se generan y qué implicaciones tienen. Las
         personas nos dejamos guiar más por las emociones que por cualquier otra
-        cosa, y precisamente por eso es tan importante tenerlas en cuenta. La
-        memoria: Cuando diseñamos una web tenemos que pensar en las limitaciones
-        de las personas para recordar. Muchas veces no se tienen en cuenta los
-        caminos para que el usuario vuelva al punto de partida, y eso puede
-        hacer que se sienta confuso. La mentalidad: El usuario tendrá creencias,
-        estereotipos, su interpretación de la sociedad y de las personas que lo
-        rodean. Siguiendo en esta línea, vemos por qué cada vez más los usuarios
-        buscan valoraciones de otras personas acerca de un producto en la red:
-        no es solamente desconfianza, también implica qué prejuicios y creencias
-        tiene. La motivación: El usuario tiene que estar motivado durante todo
-        el tiempo que esté en la página web, no solamente al principio, ya que
-        sino puede ser que abandone.  El aprendizaje: Desde el momento en que un
-        usuario entra en una página web se convierte en un aprendiz y eso
-        significa que tenemos que enseñarle los pasos que tiene que dar para que
-        consiga su objetivo. Además, se tiene que estructurar la información
-        para que el usuario entienda fácilmente todo el contenido de la web.
+        cosa, y precisamente por eso es tan importante tenerlas en cuenta.
+      </p>
+      <p>
+        La memoria: Cuando diseñamos una web tenemos que pensar en las
+        limitaciones de las personas para recordar. Muchas veces no se tienen en
+        cuenta los caminos para que el usuario vuelva al punto de partida, y eso
+        puede hacer que se sienta confuso.
+      </p>
+      <p>
+        La mentalidad: El usuario tendrá creencias, estereotipos, su
+        interpretación de la sociedad y de las personas que lo rodean. Siguiendo
+        en esta línea, vemos por qué cada vez más los usuarios buscan
+        valoraciones de otras personas acerca de un producto en la red: no es
+        solamente desconfianza, también implica qué prejuicios y creencias
+        tiene.
+      </p>
+      <p>
+        La motivación: El usuario tiene que estar motivado durante todo el
+        tiempo que esté en la página web, no solamente al principio, ya que sino
+        puede ser que abandone. 
+      </p>
+      <p>
+        El aprendizaje: Desde el momento en que un usuario entra en una página
+        web se convierte en un aprendiz y eso significa que tenemos que
+        enseñarle los pasos que tiene que dar para que consiga su objetivo.
+        Además, se tiene que estructurar la información para que el usuario
+        entienda fácilmente todo el contenido de la web.
       </p>
     </div>
+    <div class="fl col gap">
+      <div class="line blue"></div>
+      <h3 class="h3-blue">Galeria</h3>
+      <app-gallery></app-gallery>
+    </div>
   </div>
-  <app-gallery></app-gallery>
   <app-footer />
 </div>

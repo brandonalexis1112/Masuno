@@ -82,6 +82,9 @@ button{
   border: 1px solid #808080;
   border-radius: 15px;
 }
+.gap{
+  gap: 3vh;
+}
 @keyframes slideIn {
   from {
     transform: translateX(100%);

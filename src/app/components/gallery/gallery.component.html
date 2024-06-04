@@ -5,8 +5,8 @@
            [alt]="image.alt"
            [class.active]="i === currentIndex">
     </div>
-    <button (click)="prevSlide()">Previous</button>
-    <button (click)="nextSlide()">Next</button>
+    <button (click)="prevSlide()">&#10094;</button>
+    <button (click)="nextSlide()">&#10095;</button>
     <div class="dots">
       <span *ngFor="let image of images; let i = index"
             (click)="goToSlide(i)"
