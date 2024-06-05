@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ChecklistComponent } from "../form/checklist/checklist.component";
 import { FormFeildComponent } from "../form/form-feild/form-feild.component";
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, FormFeildComponent],
+  imports: [CommonModule, ReactiveFormsModule, FormFeildComponent,ChecklistComponent],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })

@@ -1,0 +1,10 @@
+p {
+  color: #c12a21;
+}
+input {
+  border: 1px solid #b7b1a9;
+  width: auto;
+  height: auto;
+  padding: 8px 16px 8px 16px;
+  border-radius: 6px;
+}

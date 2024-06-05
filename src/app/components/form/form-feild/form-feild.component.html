@@ -1,5 +1,8 @@
-<div class="form-group">
-  <label>{{ label }}</label>
+<div class="form-group fl col">
+  <div class="fl">
+    <label class="dgray">{{ label }}</label>
+    <p>*</p>
+  </div>
   <input
     [type]="type"
     [attr.maxLength]="maxLength"
@@ -8,13 +11,11 @@
     (input)="onInput($any($event.target).value)"
   />
   <div *ngIf="type === 'text' && value.length > maxLength" class="error">
-    Máximo de {{ maxLength }} caracteres permitidos.
+
   </div>
   <div *ngIf="type === 'email' && value.length !== 16" class="error">
-    El correo debe tener 16 caracteres.
   </div>
   <div *ngIf="type === 'tel' && value.length !== 9" class="error">
-    El número debe tener 9 dígitos.
   </div>
 </div>
 

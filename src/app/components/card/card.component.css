@@ -22,3 +22,26 @@
     }
   }
 }
+@media (min-width: 1px) and (max-width: 1023px) {
+  .card {
+    &.-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  .card {
+    &.-main {
+      padding: 1vw;
+    }
+
+    &.-tittle {
+      max-width: 58vw;
+      .sub-tittle {
+        max-width: 44vw;
+        height: 4vh;
+      }
+    }
+  }
+}

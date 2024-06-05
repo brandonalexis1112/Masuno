@@ -15,7 +15,7 @@ h3 {
     font-weight: 700;
   }
   &.h3-red {
-    color: #C12A21;
+    color: #c12a21;
     font-size: 32px;
     font-weight: 700;
   }
@@ -32,12 +32,15 @@ h3 {
     flex-direction: column;
   }
 }
+.jctr {
+  justify-content: center;
+}
 .ctr {
   text-align: center;
 }
 .blue {
-  background-color:  #1A36A8;
-  ;
+  background-color: #1a36a8;
+
   &.circule {
     border-radius: 100%;
     width: 230px;
@@ -50,6 +53,11 @@ h3 {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+  button:hover {
+    background-color: #add8e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #add8e6;
+  }
 }
 .red {
   background-color: #f2304b;
@@ -59,8 +67,12 @@ h3 {
     align-self: center;
   }
 }
-.gray{
-  color: #BABABA;
+.gray {
+  color: #bababa;
+}
+.dgray {
+  color: #b7b1a9;
+  font-size: 18px;
 }
 .step-1 {
   display: flex;
@@ -75,14 +87,20 @@ h3 {
     height: 2px;
   }
 }
-button{
+button {
   height: 8vh;
   width: 15vw;
   color: #ffffff;
   border: 1px solid #808080;
   border-radius: 15px;
 }
-.gap{
+button:hover {
+  background-color: #add8e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #add8e6;
+}
+
+.gap {
   gap: 3vh;
 }
 @keyframes slideIn {
@@ -115,5 +133,21 @@ button{
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes fadeInScroll {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+  .container {
+    padding: 2vh;
+  }
+  button {
+    height: 5vh;
+    width: 40vw;
   }
 }

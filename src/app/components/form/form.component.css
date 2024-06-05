@@ -1,24 +1,50 @@
 .form {
   &.container {
-    padding: 60px;
+    position: absolute;
+    right: 10px;
+    padding: 60px 15px;
     animation: slideIn 2s ease-out;
   }
   &.logo {
     max-width: 115px;
     position: absolute;
-    right: 58px;
-    top: 65px;
-    animation: slideUp 2s ease-out;
+    right: 10px;
+    top: 8px;
+    animation: slideUp 2.5s ease-out;
   }
   &.card {
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 15px;
-    height: 450px;
+    padding: 35px 15px;
+    max-width: 430px;
+    height: 100%;
+  }
+  &.tittle {
+    max-width: 26vw;
   }
 }
-
 img {
   width: 120px;
   height: 120px;
+}
+p {
+  color: #595959;
+}
+@media (min-width: 1px) and (max-width: 767px) {
+  .form {
+    .mb{
+      flex-direction: column;
+    }
+  }
+}
+@media (min-width: 1px) and (max-width: 1023px) {
+  .form {
+    &.container {
+      position: relative;
+      right: 0px;
+    }
+    &.tittle {
+      max-width: 52vw;
+    }
+  }
 }

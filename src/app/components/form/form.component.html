@@ -7,48 +7,61 @@
     />
   </div>
   <div class="form card">
-    <div>
-      <div>
-        <h2>Completa tus datos</h2>
+    <div class="fl col gap">
+      <div class="form tittle">
+        <h3 class="h3-red">Completa tus datos</h3>
+        <div class="line blue"></div>
       </div>
       <div>
-        <form [formGroup]="form" (ngSubmit)="onSubmit()">
-          <app-form-feild
-            label="Nombre"
-            formControlName="nombre"
-            [maxLength]="10"
-            pattern="^[a-zA-Z]*$"
-          ></app-form-feild>
-          <app-form-feild
-            label="Apellidos"
-            formControlName="apellidos"
-            [maxLength]="10"
-            pattern="^[a-zA-Z]*$"
-          ></app-form-feild>
-          <app-form-feild
-            label="Correo"
-            type="email"
-            formControlName="correo"
-            [maxLength]="16"
-            pattern="^.{16}$"
-          ></app-form-feild>
-          <app-form-feild
-            label="Número"
-            type="tel"
-            formControlName="numero"
-            [maxLength]="9"
-            pattern="^[0-9]{9}$"
-          ></app-form-feild>
-          <button type="submit" [disabled]="form.invalid">Enviar</button>
+        <form class="fl col gap" [formGroup]="form" (ngSubmit)="onSubmit()">
+          <div class="mb fl row gap">
+            <div class="fl col gap">
+              <app-form-feild
+                label="Nombre"
+                formControlName="nombre"
+                [maxLength]="10"
+                pattern="^[a-zA-Z]*$"
+              ></app-form-feild>
+              <app-form-feild
+                label="Número"
+                type="tel"
+                formControlName="numero"
+                [maxLength]="9"
+                pattern="^[0-9]{9}$"
+              ></app-form-feild>
+            </div>
+            <div class="fl col gap">
+              <app-form-feild
+                label="Correo"
+                type="email"
+                formControlName="correo"
+                [maxLength]="16"
+                pattern="^.{16}$"
+              ></app-form-feild>
+              <app-form-feild
+                label="Apellidos"
+                formControlName="apellidos"
+                [maxLength]="10"
+                pattern="^[a-zA-Z]*$"
+              ></app-form-feild>
+            </div>
+          </div>
+          <app-checklist></app-checklist>
+
+          <div class="fl col gap ctr center">
+            <button class="blue" type="submit" [disabled]="form.invalid">
+              Enviar
+            </button>
+            <p>
+              Aprovecha las mejores ofertas y descuentos en pollo, pavo, cerdo,
+              congelados, embutidos y mucho más. No te pierdas de nada estos
+              Cyberdays registrándote y obteniendo grandes descuentos
+              exclusivos.
+            </p>
+          </div>
         </form>
       </div>
-      <div>
-        <p>
-          Aprovecha las mejores ofertas y descuentos en pollo, pavo, cerdo,
-          congelados, embutidos y mucho más. No te pierdas de nada estos
-          Cyberdays registrándote y obteniendo grandes descuentos exclusivos.
-        </p>
-      </div>
+      <div></div>
     </div>
   </div>
 </div>

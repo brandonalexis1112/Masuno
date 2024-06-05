@@ -15,7 +15,7 @@
 }
 img {
   height: 550px;
-  max-width: 640px;
+  max-width: 540px;
 }
 svg {
   height: 60px;
@@ -23,4 +23,18 @@ svg {
 }
 p {
   text-align: left;
+}
+@media (min-width: 1px) and (max-width: 1023px) {
+  .slide {
+    .main {
+      flex-direction: column;
+    }
+    .tittle {
+      padding: 30px;
+    }
+    img {
+      height: 250px;
+      max-width: 250px;
+    }
+  }
 }

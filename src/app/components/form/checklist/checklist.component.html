@@ -1,0 +1,7 @@
+<div class="checklist fl col">
+    <app-checklist-item *ngFor="let item of checklist"
+                        [item]="item"
+                        (toggleChecked)="toggleChecked($event)">
+    </app-checklist-item>
+  </div>
+  

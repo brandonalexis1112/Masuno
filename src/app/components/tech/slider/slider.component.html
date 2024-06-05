@@ -12,8 +12,10 @@
     <button (click)="nextSlide()">&#10095;</button>
   </div>
 
-  <app-dots [count]="slides.length" 
-            [currentIndex]="currentSlideIndex" 
-            (dotClick)="goToSlide($event)">
+  <app-dots
+    [count]="slides.length"
+    [currentIndex]="currentSlideIndex"
+    (dotClick)="goToSlide($event)"
+  >
   </app-dots>
 </div>

@@ -2,15 +2,16 @@
   background-color: #ffffff;
   padding: 15px;
   &.-container {
-    width: 38vw;
+    max-width: 42vw;
     height: 360px;
   }
   &.-main {
+    width: auto;
     background-color: #ffffff;
     border: 2px dashed #003383;
     border-radius: 15px;
-    .description{
-        gap: 15px;
+    .description {
+      gap: 15px;
     }
   }
   .sub-tittle {
@@ -28,4 +29,25 @@ p {
 }
 .fz {
   font-size: 24px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .prom{
+    &.-container{
+      max-width: 56vw;
+    }
+  }
+}
+@media (min-width: 1px) and (max-width: 767px) {
+  .prom{
+    &.-container{
+      max-width: 79vw;
+    }
+    .sub-tittle {
+      flex-direction: column;
+      .per {
+        font-size: 80px;
+        font-weight: 700;
+      }
+    }
+  }
 }
