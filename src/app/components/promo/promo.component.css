@@ -4,6 +4,7 @@
   &.-container {
     max-width: 42vw;
     height: 360px;
+    box-shadow: 1px 1px 50px rgba(0,0,0,.78);
   }
   &.-main {
     width: auto;

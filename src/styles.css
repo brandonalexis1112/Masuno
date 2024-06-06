@@ -151,3 +151,16 @@ button:hover {
     width: 40vw;
   }
 }
+.mv{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mv:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.mr{
+  transition: transform 0.5s ease-in-out;
+}
+.mr:hover {
+  transform: rotate(360deg);
+}

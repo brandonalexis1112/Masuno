@@ -18,6 +18,7 @@
     padding: 35px 15px;
     max-width: 430px;
     height: 100%;
+    box-shadow: 1px 1px 50px rgba(0,0,0,.78);
   }
   &.tittle {
     max-width: 26vw;
@@ -32,7 +33,7 @@ p {
 }
 @media (min-width: 1px) and (max-width: 767px) {
   .form {
-    .mb{
+    .mb {
       flex-direction: column;
     }
   }
