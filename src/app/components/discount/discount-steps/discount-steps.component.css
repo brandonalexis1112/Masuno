@@ -1,0 +1,27 @@
+.step {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .step {
+      gap: 5px !important;
+    }
+  }
+  
+  @media (min-width: 1px) and (max-width: 767px) {
+    .step {
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .step-item {
+      scroll-snap-align: center;
+      flex: 33% 0 33%;
+    }
+  }
+  
