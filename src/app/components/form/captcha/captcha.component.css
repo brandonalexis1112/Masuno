@@ -1,0 +1,43 @@
+.captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.captcha-box span {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.captcha-box button {
+  background-color: #1a36a8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+svg {
+  width: 15px;
+  width: 15px;
+}
+
+input {
+  border: 1px solid #b7b1a9;
+  width: auto;
+  height: auto;
+  padding: 8px 16px 8px 16px;
+  border-radius: 6px;
+}

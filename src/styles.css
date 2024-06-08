@@ -41,7 +41,7 @@ h3 {
 .blue {
   background-color: #1a36a8;
 
-  &.circule {
+  &.circle {
     border-radius: 100%;
     width: 230px;
     height: 230px;
@@ -49,16 +49,19 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 5px solid #808080;
   }
-  &.circule:hover {
+
+  &.circle:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
   button:hover {
     background-color: #add8e6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-color: #add8e6;
   }
 }
+
 .red {
   background-color: #f2304b;
   &.-line {
